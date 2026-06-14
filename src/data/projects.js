@@ -19,14 +19,14 @@ export const projects = [
     tags: ['React', 'Node.js', 'PostgreSQL', 'OpenAI', 'Google Gemini', 'Docker'],
     type: 'school',
     featured: true,
-    github: null,
+    github: 'https://github.com/jordan-badcock/ai-study-assistant',
     private: false,
   },
   {
     id: 'pop-access-agent',
     title: 'POP Access Agent',
     description:
-      'Amazon Connect call-centre with a Lex conversational bot handling NOCLand\'s inbound access agent workflow, provisioned entirely via CDK.',
+      'Amazon Connect call-centre with a Lex conversational bot handling inbound access agent workflows, provisioned entirely via CDK.',
     tags: ['TypeScript', 'AWS CDK', 'Amazon Connect', 'Amazon Lex', 'Lambda'],
     type: 'work',
     featured: true,
@@ -41,7 +41,7 @@ export const projects = [
     tags: ['Python', 'FastAPI', 'Ollama', 'Mistral', 'Whisper', 'TTS', 'OpenCV'],
     type: 'school',
     featured: true,
-    github: null,
+    github: 'https://github.com/Exospherical/CP4220-FinalProject',
     private: false,
   },
 
@@ -92,7 +92,7 @@ export const projects = [
   },
   {
     id: 'nocland-devops',
-    title: 'NOCLand Infrastructure Automation',
+    title: 'Cloud Infrastructure Automation',
     description:
       'Ansible playbook library for full infrastructure automation — NMS, ITSM, MongoDB, and AWS EC2/S3/VPC lifecycle management.',
     tags: ['Ansible', 'Python', 'AWS', 'EC2', 'S3', 'CloudWatch'],

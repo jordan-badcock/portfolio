@@ -48,8 +48,8 @@ export const education = [
     id: 'bait',
     degree: 'Bachelor of Applied Information Technology',
     institution: 'College of the North Atlantic',
-    year: '2025',
-    focus: 'Applied AI',
+    year: '2026',
+    focus: 'Artificial Intelligence & Machine Learning',
   },
   {
     id: 'diploma',
