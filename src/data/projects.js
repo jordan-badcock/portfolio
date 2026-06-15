@@ -4,7 +4,7 @@ export const projects = [
     id: 'email-ingest',
     title: 'Email Ingest Pipeline',
     description:
-      'Serverless AWS service that ingests and normalises partner alert emails into a NOC event pipeline, feeding Znuny and PagerDuty.',
+      'Serverless AWS service that ingests and normalises partner alert emails into an event pipeline, feeding downstream ITSM ticketing and on-call paging.',
     tags: ['TypeScript', 'AWS CDK', 'Lambda', 'EventBridge', 'SES', 'SQS', 'DynamoDB'],
     type: 'work',
     featured: true,

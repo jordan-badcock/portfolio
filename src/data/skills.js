@@ -53,9 +53,9 @@ export const education = [
   },
   {
     id: 'diploma',
-    degree: 'Software Development Diploma',
+    degree: 'Software Development Diploma (Co-op)',
     institution: 'College of the North Atlantic',
-    year: '2022',
+    year: '2023',
     focus: 'Full-Stack Development',
   },
 ]
