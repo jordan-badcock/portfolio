@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  @page { size: letter; margin: 0.55in 0.6in; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Inter', Arial, sans-serif;
+    color: #1a1a1a;
+    font-size: 10.2pt;
+    line-height: 1.42;
+  }
+  a { color: #0e7490; text-decoration: none; }
+
+  header { margin-bottom: 14px; }
+  h1 { font-size: 23pt; font-weight: 700; letter-spacing: -0.5px; color: #0f172a; }
+  .title { font-size: 11.5pt; font-weight: 600; color: #0e7490; margin-top: 2px; }
+  .contact { font-size: 9.4pt; color: #475569; margin-top: 6px; }
+  .contact a { color: #475569; }
+
+  section { margin-top: 13px; }
+  h2 {
+    font-size: 9.4pt; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px;
+    color: #0e7490; border-bottom: 1.5px solid #cbd5e1; padding-bottom: 3px; margin-bottom: 7px;
+  }
+
+  .summary { color: #334155; }
+
+  .skills div { margin-bottom: 3px; }
+  .skills b { color: #0f172a; }
+
+  .entry { margin-bottom: 9px; }
+  .entry:last-child { margin-bottom: 0; }
+  .entry-head { display: flex; justify-content: space-between; align-items: baseline; }
+  .entry-title { font-weight: 600; color: #0f172a; font-size: 10.6pt; }
+  .entry-date { font-size: 9.2pt; color: #64748b; white-space: nowrap; }
+  ul { list-style: none; margin-top: 3px; }
+  li { padding-left: 13px; position: relative; margin-bottom: 2.5px; color: #334155; }
+  li::before { content: "‣"; position: absolute; left: 2px; color: #0e7490; font-weight: 700; }
+  .proj-name { font-weight: 600; color: #0f172a; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Jordan Badcock</h1>
+    <div class="title">Cloud &amp; AI Engineer</div>
+    <div class="contact">
+      jordanbadcock17@gmail.com &nbsp;·&nbsp;
+      <a href="https://www.linkedin.com/in/jordan-badcock-0022751bb/">LinkedIn</a> &nbsp;·&nbsp;
+      <a href="https://github.com/jordan-badcock">github.com/jordan-badcock</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>Summary</h2>
+    <p class="summary">
+      Cloud &amp; AI engineer who builds intelligent, cloud-native systems end to end. Sole engineer on
+      multiple production-grade AWS serverless platforms — event-driven pipelines and IAM-automated
+      provisioning — with a machine-learning foundation from a BAIT (AI &amp; ML) degree spanning LLM
+      applications, computer vision, and deep learning. Strong at bridging security and least-privilege
+      design with scalable engineering.
+    </p>
+  </section>
+
+  <section class="skills">
+    <h2>Technical Skills</h2>
+    <div><b>Cloud &amp; Infrastructure:</b> AWS — Lambda, CDK v2, S3, SES, EventBridge, DynamoDB, ECS/Fargate, Amazon Connect, Lex V2 · Docker · Ansible · GitHub Actions CI/CD · Linux</div>
+    <div><b>AI &amp; Machine Learning:</b> PyTorch, TensorFlow, scikit-learn · LLMs (OpenAI, Gemini, Ollama) · Whisper · spaCy · OpenCV · SHAP</div>
+    <div><b>Languages:</b> Python, TypeScript, JavaScript, SQL (PostgreSQL), Bash</div>
+    <div><b>Web &amp; Backend:</b> React, Node.js, FastAPI, REST APIs</div>
+    <div><b>Identity &amp; Security:</b> AWS IAM (least-privilege), OAuth 2.0, JWT, SAML/OIDC, PKI</div>
+  </section>
+
+  <section>
+    <h2>Professional Experience</h2>
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">Software Developer — NOCLand</span>
+        <span class="entry-date">Aug 2024 – Present</span>
+      </div>
+      <ul>
+        <li><b>Project lead, POP Access Agent:</b> sole engineer on a serverless IAM platform (AWS CDK, Lex V2, Amazon Connect) automating physical-to-logical access provisioning, with fine-grained IAM execution roles and Node.js fulfillment hooks built for SOC 2 / SOX audit readiness.</li>
+        <li>Built Python automation against high-volume ITSM workflows (Jira / Znuny), eliminating repetitive manual triage.</li>
+        <li>Optimized corporate Ansible libraries for standardized configuration and security hardening across distributed network environments.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Technical Projects</h2>
+    <div class="entry">
+      <ul>
+        <li><span class="proj-name">Multi-Tenant Email-to-Ticket Ingestion Engine (AWS):</span> sole engineer on a reusable AWS-native platform (SES → S3 → Lambda → EventBridge → DynamoDB) designed to ingest and normalize 5,000+ monthly JSON alerts across partner tenants, with cross-tenant isolation via multi-account deployment, Zod schema validation, DynamoDB idempotency, and heartbeat-based silence detection.</li>
+        <li><span class="proj-name">AI Study Assistant (Capstone):</span> full-stack LLM platform (React, Node.js, PostgreSQL) turning course material into summaries, flashcards, and quizzes, with API-response caching for performance.</li>
+        <li><span class="proj-name">Emerging Trends AI Kiosk:</span> voice-driven kiosk running a fully local LLM pipeline (FastAPI, Ollama, Whisper, TTS) — no cloud dependency.</li>
+        <li><span class="proj-name">Deep Learning &amp; Computer Vision:</span> ResNet medical-image classifier with SHAP/LIME explainability; Temporal Fusion Transformer for human-activity recognition (89% across three datasets).</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">Bachelor of Applied IT: AI &amp; Machine Learning — College of the North Atlantic</span>
+        <span class="entry-date">Graduated Jun 2026</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">Diploma in Software Development — College of the North Atlantic</span>
+        <span class="entry-date">2020 – 2023</span>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

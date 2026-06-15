@@ -33,6 +33,14 @@ export default function Navbar() {
             </a>
           ))}
           <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden sm:block text-sm text-text-muted hover:text-text-primary transition-colors"
+          >
+            Resume
+          </a>
+          <a
             href="#contact"
             className="px-4 py-2 text-sm font-medium rounded-lg text-white transition-opacity hover:opacity-80"
             style={{ background: 'linear-gradient(135deg, #00d4ff, #7c3aed)' }}
