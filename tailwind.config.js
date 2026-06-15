@@ -13,7 +13,7 @@ export default {
         purple: '#7c3aed',
         'text-primary': '#e2e8f0',
         'text-muted': '#94a3b8',
-        'text-faint': '#64748b',
+        'text-faint': '#7b89a0',
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],

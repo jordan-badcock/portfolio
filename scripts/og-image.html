@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1200px; height: 630px;
+    background: #0a0a0f;
+    font-family: 'Inter', system-ui, sans-serif;
+    position: relative;
+    overflow: hidden;
+  }
+  .grid {
+    position: absolute; inset: 0; opacity: 0.4;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+  .blob1 {
+    position: absolute; top: -150px; left: -150px;
+    width: 600px; height: 600px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(0,212,255,0.18), transparent 70%);
+    filter: blur(40px);
+  }
+  .blob2 {
+    position: absolute; bottom: -200px; right: -150px;
+    width: 600px; height: 600px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(124,58,237,0.18), transparent 70%);
+    filter: blur(40px);
+  }
+  .content {
+    position: relative; z-index: 2;
+    padding: 90px 96px;
+    height: 100%;
+    display: flex; flex-direction: column; justify-content: center;
+  }
+  .eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    color: #00d4ff; font-size: 22px; font-weight: 500;
+    letter-spacing: 0.3em; text-transform: uppercase; margin-bottom: 28px;
+  }
+  .name {
+    font-size: 110px; font-weight: 700; line-height: 0.95;
+    background: linear-gradient(135deg, #00d4ff, #7c3aed);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text; margin-bottom: 24px;
+  }
+  .title { font-size: 42px; font-weight: 500; color: #94a3b8; margin-bottom: 36px; }
+  .tags { display: flex; gap: 14px; }
+  .tag {
+    font-family: 'JetBrains Mono', monospace; font-size: 20px;
+    color: #cbd5e1; padding: 10px 20px; border-radius: 8px;
+    background: #1a1a24; border: 1px solid #ffffff14;
+  }
+  .url {
+    position: absolute; bottom: 70px; left: 96px; z-index: 2;
+    font-family: 'JetBrains Mono', monospace; font-size: 22px; color: #7b89a0;
+  }
+</style>
+</head>
+<body>
+  <div class="grid"></div>
+  <div class="blob1"></div>
+  <div class="blob2"></div>
+  <div class="content">
+    <div class="eyebrow">Cloud &amp; AI Engineer</div>
+    <div class="name">Jordan<br/>Badcock</div>
+    <div class="title">Intelligent, cloud-native systems on AWS</div>
+    <div class="tags">
+      <span class="tag">AWS</span>
+      <span class="tag">Lambda · CDK</span>
+      <span class="tag">LLMs</span>
+      <span class="tag">PyTorch</span>
+    </div>
+  </div>
+  <div class="url">d27xf7iy96sgoy.cloudfront.net</div>
+</body>
+</html>
