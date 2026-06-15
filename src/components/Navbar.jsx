@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-const links = ['About', 'Skills', 'Projects', 'Contact']
+const links = ['About', 'Skills', 'Projects']
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -37,7 +37,7 @@ export default function Navbar() {
             className="px-4 py-2 text-sm font-medium rounded-lg text-white transition-opacity hover:opacity-80"
             style={{ background: 'linear-gradient(135deg, #00d4ff, #7c3aed)' }}
           >
-            Hire Me
+            Contact
           </a>
         </div>
       </div>
