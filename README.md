@@ -2,7 +2,7 @@
 
 Personal portfolio site for Jordan Badcock, Cloud & AI Engineer.
 
-**Live:** [CloudFront URL — to be added after deploy]
+**Live:** (https://d27xf7iy96sgoy.cloudfront.net/)
 
 ## Stack
 
