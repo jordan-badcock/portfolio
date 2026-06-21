@@ -26,7 +26,7 @@ export const projects = [
     id: 'pop-access-agent',
     title: 'POP Access Agent',
     description:
-      'Amazon Connect call-centre with a Lex conversational bot handling inbound access agent workflows for [X]+ users across [Y] sites, provisioned entirely via CDK.',
+      'Amazon Connect call-centre with a Lex conversational bot handling inbound access agent workflows, provisioned entirely via CDK.',
     tags: ['TypeScript', 'AWS CDK', 'Amazon Connect', 'Amazon Lex', 'Lambda'],
     type: 'work',
     featured: true,
