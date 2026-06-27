@@ -36,7 +36,7 @@ export default function Navbar() {
             href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden sm:block text-sm text-text-muted hover:text-text-primary transition-colors"
+            className="text-sm text-text-muted hover:text-text-primary transition-colors"
           >
             Resume
           </a>
